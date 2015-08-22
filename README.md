@@ -15,19 +15,60 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-# run_analysis.R
 
-Generate Dataset
+# Evaluation Checklist
 
-Checkout the repo, and run the script run_analysis.R.
+Tidy Data Set
 
-source("run_analysis.R")
+From Question: Please upload a tidy data set according to the instructions in the project description. Please upload your data set as a separate file (do not cut and paste a dataset directly into the text box, as this may cause errors saving your submission).
 
-This will download the required package (plyr) and the required data from (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and store it in a zip file called data.zip, After this a new folder will be generated (results/) containing the two datasets.
+From Evaluation: Has the student submitted a tidy data set?
 
-dataset1.csv - 10299 rows and 81 cols.
-dataset2.csv - 180 rows and 81 cols.
+Second Data Set
 
-Include dataset
+From Question: Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-The data is located in the results folder  dataset1 <- read.csv("results/dataset1.csv") dataset2 <- read.csv("results/dataset2.csv") 
+# Github Repo with Required Scripts
+
+From Question: Please submit a link to a Github repo with the code for performing your analysis. The code should have a file run_analysis.R in the main directory that can be run as long as the Samsung data is in your working directory. The output should be the tidy data set you submitted for part 1.
+
+From Evaluation: Did the student submit a Github repo with the required scripts?
+
+# Code Book
+
+From Overview: A code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md.
+
+From Evaluation: Please submit a code book that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information.
+
+# README
+
+From Overview: You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
+
+From Question: You should include a README.md in the repo describing how the script works.
+
+From Evaluation: I was able to follow the README in the directory that explained what the analysis files did.
+
+# Data Analysis Explanation
+
+For 1st tiny data set:
+
+Read data sets and combine them
+Read subjects and combine them
+Read data labels and combine them
+Read features list
+Subset only only std and mean features from list
+Perform same subset on data set
+Rename features to be more human readable
+Read activity list
+Rename activities to be more human readable
+Rename data labels with activity name
+Merge data, subjects, and labels to single tiny data set
+Write tiny data set to file
+For 2nd tiny data set: average of measurement for activity and subject
+
+Prepare empty data set of appropriate length for
+Loop through subjects, then subloop through activities
+For each activity in a subject, get the full list of measurements
+Calculate the mean of each of these activities
+Place the means in subsequent columns of the subject/activity row
+Write second tiny data set to file
