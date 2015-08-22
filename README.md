@@ -56,7 +56,7 @@ Read data sets and combine them
 Read subjects and combine them
 Read data labels and combine them
 Read features list
-Subset only only std and mean features from list
+Subset only std and mean features from list
 Perform same subset on data set
 Rename features to be more human readable
 Read activity list
