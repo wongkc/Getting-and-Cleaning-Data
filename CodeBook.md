@@ -1,61 +1,61 @@
-#Data source
+##Data source
 
 The data represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-#Files
+##Files
 
 The following files are included (this information was copied from the README.txt file):
 
-'README.txt'
+-'README.txt'
 
-'features_info.txt': Shows information about the variables used on the feature vector.
+-'features_info.txt': Shows information about the variables used on the feature vector.
 
-'features.txt': List of all features.
+-'features.txt': List of all features.
 
-'activity_labels.txt': Links the class labels with their activity name.
+-'activity_labels.txt': Links the class labels with their activity name.
 
-'train/X_train.txt': Training set.
+-'train/X_train.txt': Training set.
 
-'train/y_train.txt': Training labels.
+-'train/y_train.txt': Training labels.
 
-'test/X_test.txt': Test set.
+-'test/X_test.txt': Test set.
 
-'test/y_test.txt': Test labels.
+-'test/y_test.txt': Test labels.
 
 The following files are available for the train and test data. Their descriptions are equivalent.
 
-'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+-'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
+-'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
 
-'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+-'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
 
-'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+-'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
-Data Transformation
+##Data Transformation
 
 The data has been downloaded, unzipped and stored locally. This is done with function unzip.
 
 These steps are included as code description in program run_analysis.R.
 
-Step 1
+#Step 1
 
 First, We will then read the data from the data files, from the test folder, X_text.txt, y_text.txt, subject_test.txt, and from the train folder, X_train.txt, y_train.txt and subject_train.txt, and from the main folder, features.txt and activity_labels.txt.
 
-Step 2
+#Step 2
 
 We will extract the mean and standard deviation.
 
-Step 3
+#Step 3
 
 We will assign descriptive labels and names.
 
-Step 4
+#Step 4
 
 On the next step, we will merge the two datasets, test and train, into one dataset.
 
-Step 5
+#Step 5
 
-Finally, we will create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. This will be called tidy.txt.
+Finally, we will create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. This will be called UCI_tidy_data.txt.
