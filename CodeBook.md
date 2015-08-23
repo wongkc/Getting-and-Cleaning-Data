@@ -6,7 +6,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ## Files
 
-The following files are included (this information was copied from the README.txt file):
+The following files are included:
 
 - 'README.txt'
 
@@ -42,20 +42,20 @@ These steps are included as code description in program run_analysis.R.
 
 ### Step 1
 
-First, We will then read the data from the data files, from the test folder, X_text.txt, y_text.txt, subject_test.txt, and from the train folder, X_train.txt, y_train.txt and subject_train.txt, and from the main folder, features.txt and activity_labels.txt.
+First, we read the data from the data files, from the test folder, X_text.txt, y_text.txt, subject_test.txt, and from the train folder, X_train.txt, y_train.txt and subject_train.txt, and from the main folder, features.txt and activity_labels.txt.
 
 ### Step 2
 
-We will extract the mean and standard deviation.
+We extract the mean and standard deviation.
 
 ### Step 3
 
-We will assign descriptive labels and names.
+We assign descriptive labels and names.
 
 ### Step 4
 
-On the next step, we will merge the two datasets, test and train, into one dataset.
+We then merge the two datasets, test and train, into one dataset.
 
 ### Step 5
 
-Finally, we will create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. This will be called UCI_tidy_data.txt.
+Finally, we create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. This will be called UCI_tidy_data.txt.
