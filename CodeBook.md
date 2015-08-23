@@ -59,3 +59,29 @@ We then merge the two datasets, test and train, into one dataset.
 ### Step 5
 
 Finally, we create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. It's called UCI_tidy_data.txt.
+
+## Variables
+These signals were used to estimate variables of the feature vector for each pattern: '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
+
+#### The set of variables that were estimated from these signals are:
+- mean(): Mean value
+- std(): Standard deviation
+- meanFreq(): Weighted average of the frequency components to obtain a mean frequency
