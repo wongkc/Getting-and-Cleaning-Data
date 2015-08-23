@@ -58,4 +58,4 @@ We then merge the two datasets, test and train, into one dataset.
 
 ### Step 5
 
-Finally, we create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. This will be called UCI_tidy_data.txt.
+Finally, we create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. It's called UCI_tidy_data.txt.
