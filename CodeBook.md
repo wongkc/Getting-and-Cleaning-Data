@@ -8,7 +8,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 The following files are included (this information was copied from the README.txt file):
 
--'README.txt'
+- 'README.txt'
 
 -'features_info.txt': Shows information about the variables used on the feature vector.
 
