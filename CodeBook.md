@@ -48,14 +48,14 @@ First, We will then read the data from the data files, from the test folder, X_t
 
 We will extract the mean and standard deviation.
 
-# Step 3
+### Step 3
 
 We will assign descriptive labels and names.
 
-# Step 4
+### Step 4
 
 On the next step, we will merge the two datasets, test and train, into one dataset.
 
-# Step 5
+### Step 5
 
 Finally, we will create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. This will be called UCI_tidy_data.txt.
