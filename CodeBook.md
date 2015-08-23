@@ -40,11 +40,11 @@ The data has been downloaded, unzipped and stored locally. This is done with fun
 
 These steps are included as code description in program run_analysis.R.
 
-# Step 1
+### Step 1
 
 First, We will then read the data from the data files, from the test folder, X_text.txt, y_text.txt, subject_test.txt, and from the train folder, X_train.txt, y_train.txt and subject_train.txt, and from the main folder, features.txt and activity_labels.txt.
 
-# Step 2
+### Step 2
 
 We will extract the mean and standard deviation.
 
